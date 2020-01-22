@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	margin: auto;
+	width: 80%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+	border-style: groove;
+	margin-bottom: -50px;
+}
+.Site {
+	display: flex;
+	min-height: 70vh;
+	flex-direction: column;
+}
+.Site-content {
+	flex: 1;
+}
+header {
+	background-color: #666;
+	padding: 5px;
+	text-align: right;
+	font-size: 35px;
+	color: white;
+}
+div.middle:after {
+	text-align: center;
+	padding: 20px;
+	background-color: #f1f1f1;
+	height: 300px;
+}
+footer {
+	background-color: #777;
+	padding: 5px;
+	text-align: right;
+	color: white;
+}
+	/*css for menu*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #666;
+}
+li {
+	text-align: right;
+	display: inline-block;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+	/*css for home/index page*/
+.middle{
+	margin: auto;
+}
+.meimage{
+	border-radius: 50%;
+	width: 200px;
+}
+	/*css for experience and education page*/
+table: {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 16px;
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+	/*css for contact page*/
+div.contact {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin: auto;
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+	/*css for photo page*/
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.8; 
+	cursor: pointer; 
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The expanding image container */
+.container {
+	position: relative;
+	display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
